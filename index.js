@@ -163,7 +163,8 @@ document.addEventListener('DOMContentLoaded',(event)=>{
     const Content = document.getElementById("Content")
       
     Content.innerHTML = `<ul>
-    <h3 class="bg-info text-md-center " id="movie">INFORMATION</h3>
+    </ul>
+    <h3 class="bg-info text-md-center " id="movie">Information</h3>
     <li>AUTHOR:  ${TopUpdateNews.author}</li>
     <li>TITLE:  ${TopUpdateNews.title}</li>
     <li>CONTENT:  ${TopUpdateNews.content}</li>
@@ -252,17 +253,16 @@ async function UpdateAllNews (){
         if(e.target.innerHTML === newsElems.title){
           
             Content.innerHTML = `<ul>
-          <h3 class="bg-info text-md-center " id="movie">INFORMATION</h3>
-          <li>AUTHOR:  ${ newsElems.author} </li>
-           <li>TITLE:  ${ newsElems.title}</li>
-           <li>CONTENT:  ${ newsElems.content}</li>
-          <li>DATE:  ${ newsElems.date}</li>
-           <li>TIME:  ${ newsElems.time}</li>
-           <p class="text-muted mt-auto mb-0">get more stories here! <a id="read" href= ""><u>Readmore</u></a></p>
-        <ul>
-        <div id="like" >
-        <h6 id="liking">like <span id ="span"></span> </h6>
-     </div>
+              <li>AUTHOR:  ${ newsElems.author} </li>
+              <li>TITLE:  ${ newsElems.title}</li>
+              <li>CONTENT:  ${ newsElems.content}</li>
+              <li>DATE:  ${ newsElems.date}</li>
+              <li>TIME:  ${ newsElems.time}</li>
+              <p class="text-muted mt-auto mb-0">get more stories here! <a id="read" href= ""><u>Readmore</u></a></p>
+            </ul>
+            <div id="like" >
+              <h6 id="liking">like <span id ="span"></span> </h6>
+            </div>
      
         <input id= "inputv" type="text" placeholder="Type your coment">
          <button id = "btbtn" type="submit">comment</button>

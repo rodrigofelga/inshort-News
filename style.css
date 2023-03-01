@@ -1,15 +1,21 @@
 /* Set background image */
+head {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Set background image */
 body {
   background-image: url("breaking-news-news.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: auto;
   background-position: center;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
+  
+  padding: 10px;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 100%) {
   body {
     font-size: 14px;
   }
@@ -17,17 +23,67 @@ body {
 
 /* Set responsive container */
 .container {
+  background-color: beige;
   width: 100%;
   max-width: 1200px;
+  max-height: cover;
   margin: 0 auto;
   padding: 0 15px;
+  box-sizing: auto;
+}
+
+#buttonHome {
+  margin: 10px;
+  padding: 8px;
+  border: 0;
+  border-color: black;
+  font-weight: 200;
+}
+
+#btn-r {
+  background-color: #ff4500;
+  color: bisque;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px;
+  padding: 5px;
+  border: 0;
+}
+
+.TopNews {
+  background: rgba(250, 235, 215, 0.8);
+  color: black;
+  font-weight: 1000;
+  }
+
+.navb {
+  color: black;
+  font-weight: 2000;
+ }
+
+#search {
+ color: rgb(224, 224, 224);
+ background-color: black;
+ font-weight: 2000;
+ }
+
+ #times {
+  color: black;
+ }
+
+.div {
+  height: 100vh;
+}
+
+#email {
+  margin-left: 2rem;
   box-sizing: border-box;
 }
 
 /* Set responsive image */
 img {
-  max-width: 100%;
+  max-width: 1200px;
   height: auto;
+  padding: auto;
 }
 
 /* Set responsive menu bar */
@@ -35,20 +91,51 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  border: 1vh solid beige;
+  max-width: none;
+ }
 
 #top button {
-  margin: 0 10px;
+  margin: 2px;
+  background-color: #ff4500;
+  border: black;
+  border-radius: 2px;
+  min-width: 120px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Set responsive row */
 #Bottom {
+  background-color: bisque;
+  background-size: 100%;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+li {
+  background: rgba(250, 235, 215, 0.8);
+  color: black;
+  font-weight: 1000;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  }
+
 #Bottom > div {
   padding: 10px;
   box-sizing: border-box;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#landImg {
+  width: 100%;
+  height: 100%;
 }
