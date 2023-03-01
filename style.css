@@ -21,6 +21,39 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+  
+  .navbar-menu.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+  .navbar-toggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .navbar-item {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+  }
+}
+
 /* Set responsive container */
 .container {
   background-color: beige;
