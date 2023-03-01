@@ -135,7 +135,15 @@ document.addEventListener('DOMContentLoaded',(event)=>{
             `
           }
           let display = setInterval(showtime,1)
-           
+          
+  function toggleNav() {
+  var nav = document.getElementById("navbar-menu");
+  if (nav.classList.contains("show")) {
+    nav.classList.remove("show");
+  } else {
+    nav.classList.add("show");
+  }
+}
 
  const updateAllCatergory = ()=>{
     fetch("https://inshorts.deta.dev/news?category=all")
