@@ -432,4 +432,4 @@ async function UpdateAllNews (){
   showtime();
   UpdateAllNews()
  
-})
+}) 
