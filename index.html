@@ -34,6 +34,8 @@
                     <option id="value">Automobile</option>
                 </select>
             </div>
+            
+            
 
             <!-- SEARCHING FORM -->
             <form action="search" id="searching" class="d-flex">
@@ -127,14 +129,23 @@
             <h4>This is The secure place to get the latest updates</h4>
         </div>
 
-        <div class="col-12 d-flex justify-content-center align-items-center" id="top">
-            <button id="loginbtn" class="mx-2">Login</button>
-            <button id="startbtn" class="mx-2">
-                <datag>Doc</datag>
+        <div class="navbar">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" onclick="toggleNav()">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
             </button>
-            <button id="contact" class="mx-2">Contact us</button>
-            <button id="feutures" class="mx-2">Features</button>
+          </div>
+          <div class="navbar-menu" id="navbar-menu">
+            <button id="loginbtn" class="navbar-item">Login</button>
+            <button id="startbtn" class="navbar-item"><datag>Doc</datag></button>
+            <button id="contact" class="navbar-item">Contact us</button>
+            <button id="feutures" class="navbar-item">Features</button>
+          </div>
         </div>
+
+        
         <div class="container-fluid">
             <div class="row " id="Bottom">
                 <div class="text-center col-12">
